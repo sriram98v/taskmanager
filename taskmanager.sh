@@ -50,5 +50,6 @@ fi
 if [ "$1" = "mv" ]
 then
         mv $taskfile $2
+	taskfile=$2
 fi
 
