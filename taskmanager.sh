@@ -35,5 +35,20 @@ fi
 # complete a task
 if [ "$1" = "complete" ]
 then
-	sed -i $2d $taskfile
+	sed -i $(($2+1))d $taskfile
 fi
+
+
+# Clear list
+if [ "$1" = "clear" ]
+then
+	rm $taskfile
+	touch $taskfile
+fi
+
+# Change save loc of taskfile
+if [ "$1" = "mv" ]
+then
+        mv $taskfile $2
+fi
+
