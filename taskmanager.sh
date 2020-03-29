@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # File to store tasks
-taskfile=/home/$USER/taskmanager
+taskfile=/home/$USER/.taskmanager
 
 if [ -e $taskfile ]
 then
